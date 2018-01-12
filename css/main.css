@@ -1,0 +1,174 @@
+
+/*----------- algemeen ---------------*/
+
+body {
+  font-family: 'NS Sans', 'Open Sans', sans-serif;
+  margin: 0;
+  color: #060922;
+  background-color: #e6e6e9;
+  font-weight: 200;
+}
+
+a {
+  color: #003082;
+  text-decoration: none;
+}
+
+
+main {
+  max-width: 95%;
+  margin-top: 12em;
+  margin-left: 2em;
+}
+
+
+/*----------- header ---------------*/
+
+header {
+  background-color: #FFFFFF;
+  color: #003082;
+  width: 100%;
+  top: 0;
+  display: block;
+  box-sizing: border-box;
+  box-shadow: 0 .125rem 0 0 rgba(7, 7, 33, .15);
+  position: fixed;
+}
+
+header img {
+    width: 3.25em;
+    height: 1.25em;
+    display: block;
+    margin: 1em 0 0 1em;
+}
+
+h1 {
+  display: block;
+  padding-left: 4em;
+  font-size: 1.2em;
+  font-weight: 300;
+  margin: -1.25em 0 0 0;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+
+/*----------- kopjes ---------------*/
+
+h2{
+  color: #003082;
+  font-size: 1.875em;
+  font-weight: 200;
+}
+
+h3, legend{
+  color: #003082;
+  font-size: 1.5em;
+  font-weight: 300;
+  margin-left: 1em;
+}
+
+
+/*----------- overzichtspagina ---------------*/
+
+main article{
+  background-color: #FFFFFF;
+  width: 25em;
+  height: 25em;
+  margin-top: 1em;
+  box-shadow: 0 .125rem 0 0 rgba(7, 7, 33, .15);
+}
+
+main div>article:nth-child(1n+2){
+  margin-left: 1em;
+}
+
+main article img {
+  width: 25em;
+  max-height: 8em;
+}
+
+main article h3 {
+  font-size: 1.5em;
+  margin-left: 1em;
+  font-weight: 400;
+}
+
+main article p {
+  font-size: 1em;
+  margin-left: 2em;
+  color: #003082;
+}
+
+main article a {
+  font-size: 1em;
+  margin-left: 2em;
+  color: #0079D3;
+  font-weight: 400;
+}
+
+main>section>div{
+  overflow-x: scroll;
+  display: flex;
+}
+
+main article footer {
+  font-size: 1em;
+}
+
+main footer > p:nth-child(1)::before{
+  content: url(../images/time.svg);
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+}
+
+main footer > p:nth-child(2)::before{
+  content: url(../images/comments.svg);
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+}
+
+/*----------- formulier ---------------*/
+
+main form{
+  background-color: #ffc917;
+  box-shadow: 0 .125rem 0 0 rgba(7, 7, 33, .15);
+  width: 25em;
+  padding-top: 1em;
+  padding-bottom: 5em;
+  margin-top: 1em;
+}
+
+main form label{
+  display: block;
+}
+
+main form legend{
+  margin-bottom: 0.5em;
+}
+
+main form fieldset{
+  border: 0;
+}
+
+main form label{
+  margin: auto;
+  margin-bottom: 1em;
+  padding: 0.6em 0 0.6em 1em;
+  color: #003082;
+  background-color: white
+
+}
+
+main form input{
+  margin-left: 1em;
+}
+/*----------- footer ---------------*/
+
+footer ul {
+  list-style-type: none;
+}
