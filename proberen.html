@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <fieldset>
+  <legend>Filter op:</legend>
+  <div>
+    <button type="button" name="filter1">Leesduur</button>
+    <div class="leesduur_dropdown_noshow">
+      <input type="checkbox" id="05minuten" value="05minuten" name="leesduur">
+      <label for="05minuten">0-5 minuten</label>
+      <input type="checkbox" id="510minuten" value="510minuten" name="leesduur">
+      <label for="510minuten">5-10 minuten</label>
+      <input type="checkbox" id="1015minuten" value="1015minuten" name="leesduur">
+      <label for="1015minuten">10-15 minuten</label>
+    </div>
+  </div>
+  <div>
+    <button type="button" name="filter3">Emotie</button>
+    <div class="emotie_dropdown_noshow">
+      <input type="checkbox" id="neutraal" value="neutraal" name="emotie">
+      <label for="positief">Neutraal</label>
+      <input type="checkbox" id="verwarrend" value="verwarrend" name="emotie">
+      <label for="verwarrend">Verwarrend</label>
+      <input type="checkbox" id="geirriteerd" value="geirriteerd" name="emotie">
+      <label for="geirriteerd">Geirriteerd</label>
+      <input type="checkbox" id="verdrietig" value="verdrietig" name="emotie">
+      <label for="verdrietig">Verdrietig</label>
+      <input type="checkbox" id="vrolijk" value="vrolijk" name="emotie">
+      <label for="vrolijk">Vrolijk</label>
+    </div>
+  </div>
+</fieldset>
+
+<fieldset>
+  <legend>Sorteer op:</legend>
+  <div>
+    <button type="button" name="sorteren">Meest populair</button>
+    <div class="sorteren_dropdown">
+      <input type="checkbox" id="kort-lang" value="kort-lang" name="sorteren">
+      <label for="kort-lang">Kort-lang</label>
+      <input type="checkbox" id="lang-kort" value="lang-kort" name="sorteren">
+      <label for="lang-kort">Lang-kort</label>
+    </div>
+  </div>
+</fieldset>
+</body>
+</html>
