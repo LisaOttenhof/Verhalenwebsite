@@ -11,7 +11,7 @@ body{
 
 main{
   max-width: 100%;
-  margin-top: 4.5em;
+  margin-top: 5em;
   margin-left: 1em;
   margin-right: 1em;
 }
@@ -85,6 +85,10 @@ body>header>nav:first-of-type{
   margin: 1em 0 0 1em;
 }
 
+body>header>nav:first-of-type>ul>li{
+  margin: 0 1em 0 0;
+}
+
 body>header>nav:first-of-type>ul>li:nth-child(1)>a::before{
   content: url("../images/mijnlijst.svg");
   display: inline-block;
@@ -118,6 +122,73 @@ body>header>nav:nth-of-type(2)>ul>li:nth-of-type(2)>a>img{
   margin: 0 2em 0 1em;
 }
 
+/*------------- media's / groot menu -------------*/
+
+@media (min-width: 31.875em){
+  body>header>nav:first-of-type{
+    display: inline-block;
+  }
+
+  body>header>nav:nth-of-type(2){
+    display: none;
+  }
+}
+
+@media (min-width: 51.875em){
+  body>header>a>img:first-of-type{
+    margin-left: 2em;
+  }
+
+  body>header>a>h1{
+    margin-left: 5em;
+  }
+
+  body>header>nav:first-of-type{
+    margin-right: 1em;
+  }
+}
+
+@media (min-width: 64.000em) {
+  body>header>a>img:first-of-type{
+    margin-left: 4em;
+  }
+
+  body>header>a>h1{
+    margin-left: 6.5em;
+  }
+
+  body>header>nav:first-of-type{
+    margin-right: 3em;
+  }
+}
+
+@media (min-width: 85.313em) {
+  body>header>a>img:first-of-type{
+    margin-left: 8em;
+  }
+
+  body>header>a>h1{
+    margin-left: 10em;
+  }
+
+  body>header>nav:first-of-type{
+    margin-right: 6em;
+  }
+}
+
+@media (min-width: 120.000em){
+  body>header>a>img:first-of-type{
+    margin-left: 25em;
+  }
+
+  body>header>a>h1{
+    margin-left: 24em;
+  }
+
+  body>header>nav:first-of-type{
+    margin-right: 25em;
+  }
+}
 
 /*------------------------------------ overzichtspagina ------------------------------------*/
 
@@ -131,6 +202,7 @@ body>main>section>div>article>header:first-of-type>img{
   margin-left: 18em;
   margin-bottom: -2em;
   cursor: pointer;
+  position: relative;
 }
 
 body>main>section>div>article>header:nth-of-type(2){
@@ -150,7 +222,7 @@ body>main>section>article>header>img{
   cursor: pointer;
   margin-left: 18em;
   margin-bottom: -2em;
-  position: absolute;
+  position: relative;
 }
 
 body>main>section>article>img {
@@ -249,7 +321,77 @@ main footer > p:nth-child(2)::before{
   display: inline-block;
 }
 
-/*------------- grid desktop -------------*/
+/*------------- media's -------------*/
+@media (min-width: 23.750em){
+  body>main>section:nth-of-type(2)>article{
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 46.250em){
+  body>main{
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+
+  body>main>section>div>article{
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 51.875em){
+  body>main{
+    max-width: 48.125em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/*------ oa verbreden uitgelicht ------*/
+
+@media (min-width: 64.000em){
+  body>main{
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  body>main>section:nth-of-type(2)>div>article{
+    width: 28em;
+  }
+
+  body>main>section:nth-of-type(2)>div>article>img{
+    width: 28em;
+  }
+
+  body>main>section:nth-of-type(2)>div>article>header:first-of-type>img{
+    margin-left: 24.5em;
+  }
+}
+
+@media (min-width: 75.938em){
+  body>main{
+    max-width: 70.000em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  body>main>section:nth-of-type(2)>div>article{
+    width: 34em;
+  }
+
+  body>main>section:nth-of-type(2)>div>article>img{
+    width: 34em;
+  }
+
+  body>main>section:nth-of-type(2)>div>article>header:first-of-type>img{
+    margin-left: 30.5em;
+  }
+}
+
+/*------------- grid -------------*/
 
 
 /*main>section:nth-of-type(2){
@@ -320,12 +462,11 @@ body>main>section>form{
   box-shadow: 0 .125rem 0 0 rgba(7, 7, 33, .15);
   width: 100%;
   padding-top: 1em;
-  padding-bottom: 1em;
   margin-top: 1em;
   margin-bottom: 2em;
 }
 
-body>main>section>form>fieldset{
+body>main>section>form>div>fieldset{
   border: 0;
 }
 
@@ -333,17 +474,16 @@ body>main>section>form>h3{
   color: #003082;
   font-weight: 300;
   font-size: 1.2em;
-  margin: .5em 0 .5em 1em;
+  margin: .5em 0 1em 1em;
 }
 
-body>main>section>form>fieldset>legend{
+body>main>section>form>div>fieldset>legend{
   color: #003082;
   font-weight: 300;
-  font-size: 1.2em;
-  margin: 1em 0 0em 1em;
+  margin: 1em 0 0 1em;
   font-size: 1.1em;
-
 }
+
 
 /*------------- zoekbalk -------------*/
 
@@ -352,7 +492,7 @@ body>main>section>form>fieldset:first-of-type{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-bottom: .5em;
+  margin-bottom: 1em;
 }
 
 main>section>form>fieldset:first-of-type>label{
@@ -443,11 +583,89 @@ button[name=filterleesduur]::after, button[name=filteremotie]::after,button[name
 
 /*------------- filteren + sorteren dropdown -------------*/
 
-body>main>section>form>fieldset:nth-of-type(2){
+body>main>section>form>div{
+  display: flex;
+  flex-direction: column;
+}
+
+body>main>section>form>div>fieldset:first-of-type{
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  margin-left: -.1em;
   margin-bottom: 2em;
+}
+
+/*------------- media's -------------*/
+
+@media (min-width: 40.625em){
+  body>main>section>form>h3{
+    margin: .5em 0 1em 2em;
+  }
+
+  body>main>section>form>fieldset{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  body>main>section>form>div{
+    margin: 2em 1em 0 1em;
+    flex-direction: row;
+  }
+
+  body>main>section>form>div>fieldset:first-of-type{
+    justify-content: flex-start;
+  }
+
+  body>main>section>form>div>fieldset:nth-of-type(2){
+    margin-left: 7em;
+  }
+}
+
+@media (min-width: 48.125em){
+  body>main>section>form>div>fieldset:nth-of-type(2){
+    margin-left: 11em;
+  }
+}
+
+@media (min-width: 64.000em){
+  body>main>section>form>h3{
+    margin-left: 4em;
+  }
+
+  body>main>section>form>fieldset{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  body>main>section>form>div{
+    margin-left: 4em;
+  }
+
+  body>main>section>form>div>fieldset:nth-of-type(2){
+    margin-left: 15em;
+  }
+}
+
+@media (min-width: 75.938em){
+  body>main>section>form>h3{
+    margin-left: 8em;
+  }
+
+  body>main>section>form>fieldset{
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  body>main>section>form>div{
+    margin-left: 8em;
+  }
+
+  body>main>section>form>div>fieldset:nth-of-type(2){
+    margin-left: 20em;
+  }
 }
 
 input[type=checkbox]{
@@ -455,7 +673,7 @@ input[type=checkbox]{
   display: none;
 }
 
-section>form>fieldset>div>div{
+section>form>div>fieldset>div>div{
   color: #0d73c8;
   width: 10em;
   display: inline-block;
@@ -468,7 +686,7 @@ section>form>fieldset>div>div{
   position: absolute;
 }
 
-section>form>fieldset>div>div>label{
+section>form>div>fieldset>div>div>label{
   background-color: #FFFFFF;
   width: 10em;
   text-align: center;
@@ -478,43 +696,43 @@ section>form>fieldset>div>div>label{
   display: block;
 }
 
-section>form>fieldset>div>div>label:hover {
+section>form>div>fieldset>div>div>label:hover {
   background-color: #0079d3;
   color: #FFFFFF;
 }
 
-section>form>fieldset>div>div>input[type=checkbox]:checked + label {
+section>form>div>fieldset>div>div>input[type=checkbox]:checked + label {
   color: #FFFFFF;
   background-color: #0079d3;
 }
 
 /*------ filter leesduur ------*/
 
-section>form>fieldset>div:nth-of-type(1)>div{
+section>form>div>fieldset>div:nth-of-type(1)>div{
   display: none;
 }
 
-section>form>fieldset>div:nth-of-type(1)>div.leesduur_dropdown {
+section>form>div>fieldset>div:nth-of-type(1)>div.leesduur_dropdown {
   display: block;
 }
 
 /*------ filter emotie ------*/
 
-section>form>fieldset>div:nth-of-type(2)>div{
+section>form>div>fieldset>div:nth-of-type(2)>div{
   display: none;
 }
 
-section>form>fieldset>div:nth-of-type(2)>div.emotie_dropdown{
+section>form>div>fieldset>div:nth-of-type(2)>div.emotie_dropdown{
   display: block;
 }
 
 /*------ sorteren ------*/
 
-section>form>fieldset:nth-of-type(3)>div:nth-of-type(1)>div{
+section>form>div>fieldset:nth-of-type(2)>div:nth-of-type(1)>div{
   display: none;
 }
 
-section>form>fieldset:nth-of-type(3)>div:nth-of-type(1)>div.sorteren_dropdown{
+section>form>div>fieldset:nth-of-type(2)>div:nth-of-type(1)>div.sorteren_dropdown{
   display: block;
 }
 
@@ -525,26 +743,41 @@ body>footer img {
     width: 3.25em;
     height: 1.25em;
     display: block;
-    margin: 1.5em 0 0 1em;
+    margin: 1.5em 0 0 0;
 }
 
 body>footer{
     background-color: white;
     height: 4.5em;
     padding: 0 2em;
-}
-
-body footer p{
-  color: #003082;
-}
-
-body>footer{
-  display: flex;
-  justify-content: space-between;
-  margin-top: 1em;
+    display: flex;
+    justify-content: space-between;
 }
 
 body>footer p{
+  color: #003082;
   margin-right: 1em;
   margin-top: 1.5em;
+}
+
+/*------------- media's -------------*/
+
+@media (min-width: 85.313em) {
+  body>footer>a{
+    margin-left: 5em;
+  }
+
+  body>footer p{
+    margin-right: 5em;
+  }
+}
+
+@media (min-width: 120.000em){
+  body>footer>a{
+    margin-left: 22em;
+  }
+
+  body>footer p{
+    margin-right: 24em;
+  }
 }

@@ -1,0 +1,48 @@
+
+/*------------- nogmaals verbreden uitgelichte verhalen -------------*/
+
+@media (min-width: 51.875em){
+  body>main>section>div>article{
+    width: 23em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  body>main>section>div>article>img{
+    width: 23em;
+  }
+
+  body>main>section>div>article>header:first-of-type>img{
+    margin-left: 19.5em;
+  }
+
+}
+
+@media (min-width: 64.000em){
+  body>main>section>div>article{
+    width: 28em;
+  }
+
+  body>main>section>div>article>img{
+    width: 28em;
+  }
+
+  body>main>section>div>article>header:first-of-type>img{
+    margin-left: 24.5em;
+  }
+}
+
+/*------------- nogmaals verbreden uitgelichte verhalen -------------*/
+@media (min-width: 75.938em){
+  body>main>section>div>article{
+    width: 34em;
+  }
+
+  body>main>section>div>article>img{
+    width: 34em;
+  }
+
+  body>main>section>div>article>header:first-of-type>img{
+    margin-left: 30.5em;
+  }
+}
