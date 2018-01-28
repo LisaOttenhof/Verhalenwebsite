@@ -1,7 +1,7 @@
 
 /*------------------------------------ algemeen ------------------------------------*/
 
-body {
+body{
   font-family: 'NS Sans', 'Open Sans', sans-serif;
   color: #060922;
   margin: 0;
@@ -9,87 +9,19 @@ body {
   font-weight: 200;
 }
 
-a {
+main{
+  max-width: 100%;
+  margin-top: 4.5em;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+a{
   color: #003082;
   text-decoration: none;
 }
 
-main {
-  max-width: 100%;
-  margin-top: 4.5em;
-  margin-left: 2em;
-  margin-right: 2em;
-}
-
-
-/*------------------------------------ header ------------------------------------*/
-
-body>header {
-  background-color: #FFFFFF;
-  color: #003082;
-  width: 100%;
-  top: 0;
-  display: flex;
-  justify-content: space-between;
-  box-sizing: border-box;
-  box-shadow: 0 .125rem 0 0 rgba(7, 7, 33, .15);
-  position: fixed;
-  z-index: 99999999;
-}
-
-body main section>div article header{
-  background-color: #ffc917;
-  color: #003082;
-  padding: .5em 0 .5em 1em;
-  font-size: 1.25em;
-}
-
-header img {
-    width: 3.25em;
-    height: 1.25em;
-    display: block;
-    margin: 1em 0 0 2em;
-}
-
-header h1 {
-  display: block;
-  font-size: 1.2em;
-  font-weight: 300;
-  margin: -1em 0 0 5em;
-}
-
-header ul{
-  display: flex;
-  margin-top: 1.25em;
-  margin-right: 2em;
-}
-
-nav ul {
-  list-style-type: none;
-}
-
-header ul li{
-  margin-left: 1em;
-}
-
-header ul li:nth-child(1)>a::before{
-  content: url("../images/mijnlijst.svg");
-  display: inline-block;
-  width: 1em;
-  height: 1em;
-  margin-right: .5em;
-}
-
-header ul li:nth-child(2)>a::before{
-  content: url("../images/mijnaccount.svg");
-  display: inline-block;
-  width: 1em;
-  height: 1em;
-  margin-right: .5em;
-}
-
-
-/*------------------------------------ kopjes ------------------------------------*/
+/*------------- kopjes -------------*/
 
 h2{
   color: #003082;
@@ -104,19 +36,109 @@ h4{
 }
 
 
+/*------------------------------------ header ------------------------------------*/
+
+body>header{
+  background-color: #FFFFFF;
+  color: #003082;
+  width: 100%;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  box-shadow: 0 .125rem 0 0 rgba(7, 7, 33, .15);
+  position: fixed;
+  z-index: 99999999;
+}
+
+body>main>section>div>article>header{
+  background-color: #ffc917;
+  color: #003082;
+  padding: .5em 0 .5em 1em;
+  font-size: 1.25em;
+}
+
+body>header>a>img:first-of-type{
+    width: 3.25em;
+    height: 1.25em;
+    display: block;
+    margin: 1em 0 0 1em;
+}
+
+body>header>a>h1{
+  display: block;
+  font-size: 1.2em;
+  font-weight: 300;
+  margin: -1em 0 1em 4em;
+}
+
+body>header>nav{
+  display: block;
+}
+
+body>header>nav>ul{
+  display: flex;
+  margin-top: 0;
+  margin-right: 0;
+  margin-left: -2em;
+}
+
+body>header>nav>ul{
+  list-style-type: none;
+}
+
+body>header>nav:first-of-type{
+  display: none;
+  margin: 1em 0 0 1em;
+}
+
+body>header>nav:first-of-type>ul>li:nth-child(1)>a::before{
+  content: url("../images/mijnlijst.svg");
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  margin-right: .5em;
+}
+
+body>header>nav:first-of-type>ul>li:nth-child(2)>a::before{
+  content: url("../images/mijnaccount.svg");
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  margin-right: .5em;
+}
+
+
+body>header>nav:not(:first-of-type){
+  display: flex;
+  margin-top: 1.2em;
+}
+
+body>header>nav:nth-of-type(2)>ul>li:first-of-type>a>img{
+  height: 1.25em;
+  margin: 0 0 0 1em;
+
+}
+
+body>header>nav:nth-of-type(2)>ul>li:nth-of-type(2)>a>img{
+  height: 1.25em;
+  margin: 0 2em 0 1em;
+}
+
+
 /*------------------------------------ overzichtspagina ------------------------------------*/
 
-main article{
+body>main>section>article{
   background-color: #FFFFFF;
-  width: 22em;
+  width: 21.5em;
   height: 20.5em;
   box-shadow: 0 .125rem 0 0 rgba(7, 7, 33, .15);
   margin-bottom: 1em;
 }
 
-main div>article{
+body>main>section>div>article{
   background-color: #FFFFFF;
-  width: 22em;
+  width: 21.5em;
   height: 23em;
   box-shadow: 0 .125rem 0 0 rgba(7, 7, 33, .15);
   margin-bottom: 1em;
@@ -127,7 +149,7 @@ main div>article:nth-child(1n+2){
 }
 
 main article img {
-  width: 22em;
+  width: 21.5em;
   max-height: 8em;
 }
 
@@ -200,7 +222,7 @@ main footer > p:nth-child(2)::before{
 /*------------- grid desktop -------------*/
 
 
-main>section:nth-of-type(2){
+/*main>section:nth-of-type(2){
   display: grid;
   grid-column: 1fr 1fr 1fr;
   grid-row: 25em 25em 25em 25em 25em 25em 25em 25em 25em 25em;
@@ -212,7 +234,7 @@ main>section>div{
   grid-row: 25em;
 }
 
-main>
+main>section>div>
 
 
 main>section>h2{
@@ -255,14 +277,15 @@ main>section>article:nth-of-type(6){
   grid-row: 5;
 }
 
-@media max-width:25.938em{
+@media (max-width:25.938em){
   body>main>section>article{
-    width: 50%;
+    width: 100%;
   }
-}
+}*/
 
-/*------------------------------------ Zoekopties ------------------------------------*/
-main form{
+/*------------------------------------ zoekopties ------------------------------------*/
+
+body>main>section>form{
   background-color: #ffc917;
   box-shadow: 0 .125rem 0 0 rgba(7, 7, 33, .15);
   width: 100%;
@@ -272,18 +295,18 @@ main form{
   margin-bottom: 2em;
 }
 
-main form fieldset{
+body>main>section>form>fieldset{
   border: 0;
 }
 
-main>section>form>h3{
+body>main>section>form>h3{
   color: #003082;
   font-weight: 300;
   font-size: 1.2em;
-  margin: 1em 0 0 1em;
+  margin: .5em 0 .5em 1em;
 }
 
-main>section>form>fieldset>legend{
+body>main>section>form>fieldset>legend{
   color: #003082;
   font-weight: 300;
   font-size: 1.2em;
@@ -292,20 +315,39 @@ main>section>form>fieldset>legend{
 
 }
 
-/*------------- zoekopties -------------*/
+/*------------- zoekbalk -------------*/
 
-main>section>form>fieldset>label>input{
+body>main>section>form>fieldset:first-of-type{
+  border: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: .5em;
+}
+
+main>section>form>fieldset:first-of-type>label{
+  width: 100%;
+  height: 2.5em;
+  background-color: #FFFFFF;
+}
+
+body>main>section>form>fieldset:first-of-type>label>input{
   font-family: 'NS Sans', 'Open Sans', sans-serif;
   font-size: 0.8em;
   border: none;
-  height: 3.125em;
-  width: 70%;
-  padding-left: 1em;
+  width: 88%;
+  margin: 0.9em 0 0.8em 1em;
+}
+
+body>main>section>form>fieldset:first-of-type>label>input:focus {
+  background: rgba(0,0,255,.2);
+  border-radius: 0.2em;
+  outline: none;
 }
 
 button[name="zoekbutton"]{
-  margin: 1em 0 1em 0;
-  padding: 0.8em 2.5em 0.9em 1.3em;
+  margin: 0 0 0 0;
+  padding: 0.5em 2.5em 0.6em 1.3em;
   font-size: 0.9em;
   color: #FFFFFF;
   background-color: #0079D3;
@@ -315,7 +357,7 @@ button[name="zoekbutton"]{
 }
 
 button[name="zoekbutton"]:hover{
-  box-shadow: inset 0 -3.125em 0 #005ca0;
+  box-shadow: inset 0 -3em 0 #005ca0;
   cursor: pointer;
 }
 
@@ -334,19 +376,22 @@ button[name="zoekbutton"]::after{
 
 button[name="filterleesduur"], button[name="filteremotie"], button[name="sorteren"]{
   text-align: center;
-  width: 10em;
+  width: 9.5em;
   max-height: 2.5em;
   font-family: 'Ns Sans', 'Open Sans', sans-serif;
   font-weight: 300;
   font-size: 1em;
   color: #003082;
-  margin: 0;
   background-color: #ffc917;
   border: none;
-  padding: 0.9em 1.5em 0.9em 1em;
+  padding: 0.9em 1.5em 0.9em .5em;
   box-shadow: 0 -.15em 0 rgba(7, 7, 33, .1) inset;
   transition: all .15s ease-in-out;
   cursor: pointer;
+}
+
+button[name="filterleesduur"]{
+  margin-right: 1em;
 }
 
 button[name="filterleesduur"]:hover, button[name="filteremotie"]:hover, button[name="sorteren"]:hover {
@@ -367,6 +412,13 @@ button[name=filterleesduur]::after, button[name=filteremotie]::after,button[name
 }
 
 /*------------- filteren + sorteren dropdown -------------*/
+
+body>main>section>form>fieldset:nth-of-type(2){
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-bottom: 2em;
+}
 
 input[type=checkbox]{
   visibility: hidden;
