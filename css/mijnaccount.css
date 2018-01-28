@@ -1,0 +1,36 @@
+
+main{
+  margin-bottom: 3em;
+}
+
+h2{
+  margin-bottom: 1.5em
+}
+
+body>main>a{
+  width: 5em;
+  margin: 2em 1em 1em 1em;
+  padding: 0.8em 2.5em 0.9em 1.3em;
+  font-size: 1em;
+  color: #FFFFFF;
+  background-color: #0079D3;
+  border: none;
+  box-shadow: inset 0 -.15em 0 #005ca0;
+  transition: box-shadow .15s ease-in-out;
+}
+
+body>main>a:hover{
+  box-shadow: inset 0 -3.125em 0 #005ca0;
+  cursor: pointer;
+}
+
+body>main>a::after{
+  content: url("../images/pijl_wit.svg");
+  width: 1em;
+  height: 1em;
+  font-weight: 200;
+  margin-left: 0.8em;
+  margin-top: 0.1em;
+  display: inline-block;
+  position: absolute;
+}

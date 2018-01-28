@@ -51,13 +51,6 @@ body>header{
   z-index: 99999999;
 }
 
-body>main>section>div>article>header{
-  background-color: #ffc917;
-  color: #003082;
-  padding: .5em 0 .5em 1em;
-  font-size: 1.25em;
-}
-
 body>header>a>img:first-of-type{
     width: 3.25em;
     height: 1.25em;
@@ -128,12 +121,54 @@ body>header>nav:nth-of-type(2)>ul>li:nth-of-type(2)>a>img{
 
 /*------------------------------------ overzichtspagina ------------------------------------*/
 
+body>main>section>div>article>header:first-of-type{
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+body>main>section>div>article>header:first-of-type>img{
+  width: 2.5em;
+  display: flex;
+  margin-left: 18em;
+  margin-bottom: -2em;
+  cursor: pointer;
+}
+
+body>main>section>div>article>header:nth-of-type(2){
+  background-color: #ffc917;
+  color: #003082;
+  padding: .5em 0 .5em 1em;
+  font-size: 1.25em;
+}
+
+body>main>section>article>header{
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+body>main>section>article>header>img{
+  width: 2.5em;
+  display: flex;
+  cursor: pointer;
+  margin-left: 18em;
+  margin-bottom: -2em;
+  position: absolute;
+}
+
+body>main>section>article>img {
+  width: 21.5em;
+  max-height: 8em;
+}
+
+body>main>section>div>article>img {
+  width: 21.5em;
+  max-height: 8em;
+}
+
 body>main>section>article{
   background-color: #FFFFFF;
   width: 21.5em;
   height: 20.5em;
   box-shadow: 0 .125rem 0 0 rgba(7, 7, 33, .15);
-  margin-bottom: 1em;
+  margin-bottom: 1.5em;
 }
 
 body>main>section>div>article{
@@ -141,22 +176,17 @@ body>main>section>div>article{
   width: 21.5em;
   height: 23em;
   box-shadow: 0 .125rem 0 0 rgba(7, 7, 33, .15);
-  margin-bottom: 1em;
+  margin-bottom: 1.5em;
 }
 
 main div>article:nth-child(1n+2){
   margin-left: 1em;
 }
 
-main article img {
-  width: 21.5em;
-  max-height: 8em;
-}
-
 main article h4 {
   font-size: 1.15em;
   margin-left: 1.8em;
-  margin-bottom: 0.7em;
+  margin-bottom: 0.2em;
   font-weight: 400;
 }
 
