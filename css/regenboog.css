@@ -2,5 +2,58 @@
 body>main>section:nth-of-type(2){
   background: url("../images/regenboog-achtergrond-mobiel.png") center top no-repeat;
   background-size: 100% auto;
-  height: 400em;
+  height: 75em;
+}
+
+body>main>section:first-of-type>p::before{
+  top: 6.3em;
+}
+
+body>main>section:nth-of-type(2).scroll_animatie{
+  background: url("../images/regenboog-achtergrond-mobiel2.png") center top no-repeat;
+  background-size: 100% auto;
+  margin-top: -2em;
+  height: 75em;
+}
+
+@media (min-width:48.000em){
+  body>main>section:nth-of-type(2){
+    display: none;
+  }
+
+  body>main>section:nth-of-type(3){
+    background: url("../images/regenboog-achtergrond-tablet.png") center top no-repeat;
+    background-size: 100% auto;
+    height: 152em;
+  }
+
+  body>main>section:nth-of-type(3).scroll_animatie{
+    background: url("../images/regenboog-achtergrond-tablet2.png") center top no-repeat;
+    background-size: 100% auto;
+    margin-top: -2em;
+    height: 152em;
+  }
+}
+
+@media (min-width:74.375em){
+  body>main>section:nth-of-type(2){
+    display: none;
+  }
+
+  body>main>section:nth-of-type(3){
+    display: none;
+  }
+
+  body>main>section:nth-of-type(4){
+    background: url("../images/regenboog-achtergrond-desktop.png") center top no-repeat;
+    background-size: 100% auto;
+    height: 145em;
+  }
+
+  body>main>section:nth-of-type(4).scroll_animatie{
+    background: url("../images/regenboog-achtergrond-desktop2.png") center top no-repeat;
+    background-size: 100% auto;
+    margin-top: -2em;
+    height: 145em;
+  }
 }
