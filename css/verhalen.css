@@ -44,7 +44,16 @@ body>main>section:first-of-type>p::before{
   left: 1.5em;
 }
 
-body>main:first-of-type>section>header>img{
+body>main>section:first-of-type>header>img{
+  width: 2.5em;
+  display: flex;
+  margin-left: 88%;
+  margin-top: -1.5em;
+  cursor: pointer;
+  position: relative;
+}
+
+body>main>section:first-of-type>header>a>img{
   width: 2.5em;
   display: flex;
   margin-left: 88%;
@@ -168,6 +177,10 @@ body>main>section>img{
     margin-left: 92%;
   }
 
+  body>main>section:first-of-type>header>a>img{
+    margin-left: 92%;
+  }
+
   body>main>section:nth-of-type(3)>p:nth-of-type(1){
     margin-left: -4em;
     margin-top: -3em;
@@ -218,6 +231,10 @@ body>main>section>img{
 
 @media (min-width: 64.000em){
   body>main>section:first-of-type>header>img{
+    margin-left: 94%;
+  }
+
+  body>main>section:first-of-type>header>a>img{
     margin-left: 94%;
   }
 

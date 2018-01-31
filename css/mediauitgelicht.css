@@ -16,6 +16,9 @@
     margin-left: 19.5em;
   }
 
+  body>main>section>div>article>header:first-of-type>a>img{
+    margin-left: 19.5em;
+  }
 }
 
 @media (min-width: 64.000em){
@@ -28,6 +31,10 @@
   }
 
   body>main>section>div>article>header:first-of-type>img{
+    margin-left: 24.5em;
+  }
+
+  body>main>section>div>article>header:first-of-type>a>img{
     margin-left: 24.5em;
   }
 }
@@ -43,6 +50,10 @@
   }
 
   body>main>section>div>article>header:first-of-type>img{
+    margin-left: 30.5em;
+  }
+
+  body>main>section>div>article>header:first-of-type>a>img{
     margin-left: 30.5em;
   }
 }

@@ -138,6 +138,8 @@ body>main>section>div>article{
     background: url('../images/telegrafisch-tablet.png') fixed center no-repeat;
     background-size: 95%;
     background-position: 4em 7.5em;
+    width: 90%;
+    overflow-x: scroll;
   }
 
   body>main>section:nth-of-type(2)>p{
@@ -145,8 +147,8 @@ body>main>section>div>article{
   }
 
   body>main>section:nth-of-type(2)>div{
-    overflow-x: scroll;
-    display: flex;
+    width: 80%;
+    height: auto;
   }
 
   body>main>section>div:first-of-type>article{
@@ -157,17 +159,32 @@ body>main>section>div>article{
 
   body>main>section>div>article:first-of-type{
     width: 50em;
-    height: 35em;
+    height: auto;
     margin-top: 0;
     margin-left: 2em;
   }
 
   body>main>section>div:first-of-type>article:nth-of-type(2){
     width: 50em;
-    height: 35em;
+    height: auto;
   }
 
   body>main>section>div:first-of-type>article>p{
     color: #000000;
+  }
+}
+
+@media (min-width:74.375em){
+  body>main>section:nth-of-type(2)>div{
+    width: 150em;;
+    height: auto;
+  }
+
+  body>main>section>div>article:first-of-type{
+    width: 90em;
+  }
+
+  body>main>section>div>article:nth-of-type(2){
+    width: 90em;
   }
 }
