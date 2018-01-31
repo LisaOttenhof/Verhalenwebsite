@@ -172,12 +172,140 @@ body>main>section>div>article{
   body>main>section>div:first-of-type>article>p{
     color: #000000;
   }
+
+  body>main>section:nth-of-type(2)>div>article:nth-of-type(1)>p:nth-of-type(1){
+    margin-top: 0;
+    margin-left: 6em;
+    font-size: 1.3em;
+  }
+
+  body>main>section:nth-of-type(2)>div>article:nth-of-type(1)>p:nth-of-type(2){
+    margin-top: 2.5em;
+    margin-left: 1.5em;
+    font-size: 1.3em;
+  }
+
+  body>main>section:nth-of-type(2)>div>article:nth-of-type(1)>p:nth-of-type(3){
+    margin-top: 0;
+    margin-left: 1em;
+    font-size: 2em;
+  }
+
+  body>main>section:nth-of-type(2)>div>article:nth-of-type(1)>p:nth-of-type(4){
+    margin-top: -.7em;;
+    margin-left: 6em;
+  }
+
+  body>main>section:nth-of-type(2)>div>article:nth-of-type(1)>p:nth-of-type(5){
+    margin-top: -.5em;
+    margin-left: 6em;
+  }
+
+  body>main>section:nth-of-type(2)>div>article:nth-of-type(1)>p:nth-of-type(6){
+    margin-top: -.2em;
+    margin-left: 1.3em;
+    margin-right: 5em;
+    font-size: 1.3em;
+  }
+
+  body>main>section:nth-of-type(2)>div>article:nth-of-type(1)>p:nth-of-type(7){
+    margin-top: -.4em;
+    margin-left: 3em;
+    margin-right: 12em;
+  }
+
+  body>main>section:nth-of-type(2)>div>article:nth-of-type(1)>p:nth-of-type(8){
+    margin-top: 1em;
+    margin-left: 4em;
+    margin-right: 11em;
+    font-size: 1.2em;
+  }
+
+  body>main>section:nth-of-type(2)>div>article:nth-of-type(1)>p:nth-of-type(9){
+    margin-top: 1.5em;
+    margin-left: 6.6em;
+    margin-right: 12em;
+  }
+
+  body>main>section:nth-of-type(2)>div>article:nth-of-type(1)>p:nth-of-type(10){
+    margin-top: -.4em;
+    margin-left: 3em;
+    margin-right: 12em;
+  }
+
+  body>main>section:nth-of-type(2)>div>article:nth-of-type(2)>p:nth-of-type(1){
+    margin-top: -.1em;
+    margin-left: 8em;
+    margin-right: 6em;
+    font-size: 1em;
+  }
+
+  body>main>section:nth-of-type(2)>div>article:nth-of-type(2)>p:nth-of-type(2){
+    margin-top: -.5em;
+    margin-left: 10em;
+    font-size: .8em;
+  }
+
+  body>main>section:nth-of-type(2)>div>article:nth-of-type(2)>p:nth-of-type(3){
+    margin-top: .7em;
+    margin-left: 1.5em;
+    font-size: 2em;
+  }
+
+  body>main>section:nth-of-type(2)>div>article:nth-of-type(2)>p:nth-of-type(4){
+    margin-top: -.5em;;
+    margin-left: 8em;
+  }
+
+  body>main>section:nth-of-type(2)>div>article:nth-of-type(2)>p:nth-of-type(5){
+    margin-top: -.5em;
+    margin-left: 8em;
+  }
+
+  body>main>section:nth-of-type(2)>div>article:nth-of-type(2)>p:nth-of-type(6){
+    margin-top: -.2em;
+    margin-left: 2em;
+    margin-right: 5em;
+    font-size: 1.3em;
+  }
+
+  body>main>section:nth-of-type(2)>div>article:nth-of-type(2)>p:nth-of-type(7){
+    margin-top: -.4em;
+    margin-left: 4em;
+    margin-right: 12em;
+  }
+
+  body>main>section:nth-of-type(2)>div>article:nth-of-type(2)>p:nth-of-type(8){
+    margin-top: 2em;
+    margin-left: 4em;
+    margin-right: 11em;
+    font-size: 1.2em;
+  }
+
+  body>main>section:nth-of-type(2)>div>article:nth-of-type(2)>p:nth-of-type(9){
+    margin-top: 0em;
+    margin-left: 6.6em;
+    margin-right: 5em;
+    font-size: 2em;
+  }
 }
 
+
 @media (min-width:74.375em){
+  body>main>section:nth-of-type(2){
+    background: url('../images/telegrafisch-desktop.png') fixed center no-repeat;
+    background-size: 95%;
+    background-position: 4em 7.5em;
+    width: 90%;
+    overflow-x: scroll;
+    overflow-y: scroll;
+  }
+
   body>main>section:nth-of-type(2)>div{
     width: 150em;;
     height: auto;
+    margin-top: 2.5em;
+    margin-left: 4.5em;
   }
 
   body>main>section>div>article:first-of-type{
@@ -186,5 +314,265 @@ body>main>section>div>article{
 
   body>main>section>div>article:nth-of-type(2){
     width: 90em;
+  }
+
+  body>main>section:nth-of-type(2)>div>article:nth-of-type(1)>p:nth-of-type(1){
+    margin-top: 0;
+    margin-left: 6em;
+    font-size: 1.3em;
+  }
+
+  body>main>section:nth-of-type(2)>div>article:nth-of-type(1)>p:nth-of-type(2){
+    margin-top: 2.5em;
+    margin-left: 1.5em;
+    font-size: 1.3em;
+  }
+
+  body>main>section:nth-of-type(2)>div>article:nth-of-type(1)>p:nth-of-type(3){
+    margin-top: -.3em;
+    margin-left: 1em;
+    font-size: 2em;
+  }
+
+  body>main>section:nth-of-type(2)>div>article:nth-of-type(1)>p:nth-of-type(4){
+    margin-top: -.7em;;
+    margin-left: 6em;
+  }
+
+  body>main>section:nth-of-type(2)>div>article:nth-of-type(1)>p:nth-of-type(5){
+    margin-top: 2em;
+    margin-left: 6em;
+  }
+
+  body>main>section:nth-of-type(2)>div>article:nth-of-type(1)>p:nth-of-type(6){
+    margin-top: 2em;
+    margin-left: 1.3em;
+    margin-right: 5em;
+    font-size: 1.3em;
+  }
+
+  body>main>section:nth-of-type(2)>div>article:nth-of-type(1)>p:nth-of-type(7){
+    margin-top: -.4em;
+    margin-left: 2em;
+    margin-right: 12em;
+  }
+
+  body>main>section:nth-of-type(2)>div>article:nth-of-type(1)>p:nth-of-type(8){
+    margin-top: 1em;
+    margin-left: 4em;
+    margin-right: 40em;
+    font-size: 1.2em;
+  }
+
+  body>main>section:nth-of-type(2)>div>article:nth-of-type(1)>p:nth-of-type(9){
+    margin-top: 1.5em;
+    margin-left: 6.6em;
+    margin-right: 12em;
+  }
+
+  body>main>section:nth-of-type(2)>div>article:nth-of-type(1)>p:nth-of-type(10){
+    margin-top: -1em;
+    margin-left: 3em;
+    margin-right: 12em;
+  }
+
+  body>main>section:nth-of-type(2)>div>article:nth-of-type(2)>p:nth-of-type(1){
+    margin-top: -.2em;
+    margin-left: 6.5em;
+    margin-right: 6em;
+    font-size: .8em;
+  }
+
+  body>main>section:nth-of-type(2)>div>article:nth-of-type(2)>p:nth-of-type(2){
+    margin-top: -.5em;
+    margin-left: 10em;
+    font-size: .8em;
+  }
+
+  body>main>section:nth-of-type(2)>div>article:nth-of-type(2)>p:nth-of-type(3){
+    margin-top: 1.2em;
+    margin-left: 0em;
+    margin-right: 8em;
+    font-size: 2em;
+  }
+
+  body>main>section:nth-of-type(2)>div>article:nth-of-type(2)>p:nth-of-type(4){
+    margin-top: -.8em;;
+    margin-left: 2em;
+  }
+
+  body>main>section:nth-of-type(2)>div>article:nth-of-type(2)>p:nth-of-type(5){
+    margin-top: -.5em;
+    margin-left: 8em;
+  }
+
+  body>main>section:nth-of-type(2)>div>article:nth-of-type(2)>p:nth-of-type(6){
+    margin-top: 1.2em;
+    margin-left: 0;
+    margin-right: 5em;
+    font-size: 1.3em;
+  }
+
+  body>main>section:nth-of-type(2)>div>article:nth-of-type(2)>p:nth-of-type(7){
+    margin-top: 1em;
+    margin-left: 1em;
+    margin-right: 12em;
+  }
+
+  body>main>section:nth-of-type(2)>div>article:nth-of-type(2)>p:nth-of-type(8){
+    margin-top: 2em;
+    margin-left: 4em;
+    margin-right: 11em;
+    font-size: 1.2em;
+  }
+
+  body>main>section:nth-of-type(2)>div>article:nth-of-type(2)>p:nth-of-type(9){
+    margin-top: 0em;
+    margin-left: 2.5em;
+    margin-right: 5em;
+    font-size: 2em;
+  }
+}
+
+@media (min-width:78.00em){
+  body>main>section:nth-of-type(2){
+    background: url('../images/telegrafisch-desktop.png') fixed center no-repeat;
+    background-size: 85%;
+    background-position: 6em 7.5em;
+    width: 90%;
+    overflow-x: scroll;
+    overflow-y: scroll;
+  }
+
+  body>main>section:nth-of-type(2)>div{
+    width: 150em;;
+    height: auto;
+    margin-top: 2.5em;
+    margin-left: 4.5em;
+  }
+
+  body>main>section>div>article:first-of-type{
+    width: 90em;
+  }
+
+  body>main>section>div>article:nth-of-type(2){
+    width: 90em;
+  }
+
+  body>main>section:nth-of-type(2)>div>article:nth-of-type(1)>p:nth-of-type(1){
+    margin-top: 0;
+    margin-left: 6em;
+    font-size: 1.3em;
+  }
+
+  body>main>section:nth-of-type(2)>div>article:nth-of-type(1)>p:nth-of-type(2){
+    margin-top: 2.5em;
+    margin-left: 1.5em;
+    font-size: 1.3em;
+  }
+
+  body>main>section:nth-of-type(2)>div>article:nth-of-type(1)>p:nth-of-type(3){
+    margin-top: -.5em;
+    margin-left: 1em;
+    font-size: 2em;
+  }
+
+  body>main>section:nth-of-type(2)>div>article:nth-of-type(1)>p:nth-of-type(4){
+    margin-top: -.7em;;
+    margin-left: 6em;
+  }
+
+  body>main>section:nth-of-type(2)>div>article:nth-of-type(1)>p:nth-of-type(5){
+    margin-top: 2em;
+    margin-left: 6em;
+  }
+
+  body>main>section:nth-of-type(2)>div>article:nth-of-type(1)>p:nth-of-type(6){
+    margin-top: 1.4em;
+    margin-left: 1.3em;
+    margin-right: 5em;
+    font-size: 1.3em;
+  }
+
+  body>main>section:nth-of-type(2)>div>article:nth-of-type(1)>p:nth-of-type(7){
+    margin-top: -.4em;
+    margin-left: 1.5em;
+    margin-right: 12em;
+  }
+
+  body>main>section:nth-of-type(2)>div>article:nth-of-type(1)>p:nth-of-type(8){
+    margin-top: -.3em;
+    margin-left: 4em;
+    margin-right: 40em;
+    font-size: 1.2em;
+  }
+
+  body>main>section:nth-of-type(2)>div>article:nth-of-type(1)>p:nth-of-type(9){
+    margin-top: .5em;
+    margin-left: 6.6em;
+    margin-right: 12em;
+  }
+
+  body>main>section:nth-of-type(2)>div>article:nth-of-type(1)>p:nth-of-type(10){
+    margin-top: 0em;
+    margin-left: 3em;
+    margin-right: 12em;
+  }
+
+  body>main>section:nth-of-type(2)>div>article:nth-of-type(2)>p:nth-of-type(1){
+    margin-top: -.2em;
+    margin-left: 6em;
+    margin-right: 6em;
+    font-size: .8em;
+  }
+
+  body>main>section:nth-of-type(2)>div>article:nth-of-type(2)>p:nth-of-type(2){
+    margin-top: -.5em;
+    margin-left: 5em;
+    font-size: .8em;
+  }
+
+  body>main>section:nth-of-type(2)>div>article:nth-of-type(2)>p:nth-of-type(3){
+    margin-top: 1.2em;
+    margin-left: -1.5em;
+    margin-right: 10em;
+    font-size: 2em;
+  }
+
+  body>main>section:nth-of-type(2)>div>article:nth-of-type(2)>p:nth-of-type(4){
+    margin-top: -1em;;
+    margin-left: -1em;
+  }
+
+  body>main>section:nth-of-type(2)>div>article:nth-of-type(2)>p:nth-of-type(5){
+    margin-top: -1em;
+    margin-left: 8em;
+  }
+
+  body>main>section:nth-of-type(2)>div>article:nth-of-type(2)>p:nth-of-type(6){
+    margin-top: 1em;
+    margin-left: -2em;
+    margin-right: 5em;
+    font-size: 1.3em;
+  }
+
+  body>main>section:nth-of-type(2)>div>article:nth-of-type(2)>p:nth-of-type(7){
+    margin-top: 1em;
+    margin-left: -.5em;
+    margin-right: 12em;
+  }
+
+  body>main>section:nth-of-type(2)>div>article:nth-of-type(2)>p:nth-of-type(8){
+    margin-top: 2em;
+    margin-left: 4em;
+    margin-right: 11em;
+    font-size: 1.2em;
+  }
+
+  body>main>section:nth-of-type(2)>div>article:nth-of-type(2)>p:nth-of-type(9){
+    margin-top: 0em;
+    margin-left: .8em;
+    margin-right: 5em;
+    font-size: 2em;
   }
 }
